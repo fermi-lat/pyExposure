@@ -1,0 +1,23 @@
+------------------------------------------------------------
+User: jchiang  Thu Mar  9 21:49:14 PST 2006
+users/jchiang/pyExposure
+
+Log Message:
+initial import
+
+Status:
+
+Vendor Tag:	JC
+Release Tags:	v0
+		
+I users/jchiang/pyExposure/rh9_gcc32
+N users/jchiang/pyExposure/.cvsignore
+I users/jchiang/pyExposure/.cvsignore~
+N users/jchiang/pyExposure/cmt/requirements
+N users/jchiang/pyExposure/src/Exposure.cxx
+N users/jchiang/pyExposure/src/pyExposure.in
+N users/jchiang/pyExposure/pyExposure/Exposure.h
+
+No conflicts created by this import
+
+    *
