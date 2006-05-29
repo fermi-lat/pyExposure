@@ -3,7 +3,7 @@ version v0
 
 author James Chiang <jchiang@slac.stanford.edu>
 
-# $Id: requirements,v 1.5 2005/04/13 06:22:43 jchiang Exp $
+# $Id: requirements,v 1.1.1.1 2006/03/10 05:49:13 jchiang Exp $
 
 use GlastPolicy v*
 use astro v*
@@ -11,6 +11,8 @@ use irfLoader v* irfs
 use Likelihood v*
 use st_facilities v*
 use SwigPolicy v*
+use pyLikelihood v* -no_auto_imports
+use sane v* -no_auto_imports
 
 apply_pattern package_include
 apply_pattern package_linkopts
