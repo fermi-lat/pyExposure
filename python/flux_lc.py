@@ -5,7 +5,7 @@ curves prepared by gtbin.
 @author J. Chiang <jchiang@slac.stanford.edu>
 """
 #
-# $Header$
+# $Header: /nfs/slac/g/glast/ground/cvs/users/jchiang/pyExposure/python/flux_lc.py,v 1.1 2006/05/28 14:40:27 jchiang Exp $
 #
 import numarray as num
 from FunctionWrapper import FunctionWrapper
@@ -13,6 +13,10 @@ from readXml import SourceModel
 import pyLikelihood as pyLike
 from FitsNTuple import FitsNTuple
 import pyExposure
+
+def log_array(npts, xmin, xmax):
+    xstep = num.log(xmax/xmin)/(npts - 1)
+    return xmin*num.exp(num.arange(npts, type=num.Float)*xstep)
 
 class ModelFunction(object):
     _funcFactory = pyLike.SourceFactory_funcFactory()
@@ -71,11 +75,10 @@ class Exposure(object):
 
 if __name__ == '__main__':
     import hippoplotter as plot
-    from log_array import log_array
     
     ee = log_array(100, 20, 2e5)
     bpl = ModelFunction('solar_flare_bpl_model.xml', 'Solar Flare')
-    plot.scatter(ee, bpl(ee), xlog=1, ylog=1, pointRep='Line')
+#    plot.scatter(ee, bpl(ee), xlog=1, ylog=1, pointRep='Line')
 
     exposure = Exposure('flare_lc.fits')
 

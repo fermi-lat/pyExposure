@@ -3,7 +3,7 @@
  * @brief LAT effective area, integrated over time bins.
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/users/jchiang/pyExposure/src/Exposure.cxx,v 1.1.1.1 2006/03/10 05:49:13 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/users/jchiang/pyExposure/src/Exposure.cxx,v 1.2 2006/05/28 14:40:28 jchiang Exp $
  */
 
 #include <algorithm>
@@ -82,9 +82,9 @@ void Exposure::readScData(const std::string & scDataFile) {
 }
 
 void Exposure::integrateExposure() {
-   unsigned int numIntervals = m_timeBoundaries.size() - 1;
+   size_t numIntervals = m_timeBoundaries.size() - 1;
    m_exposureValues.resize(numIntervals);
-   for (unsigned int i = 0; i < numIntervals; i++) {
+   for (size_t i = 0; i < numIntervals; i++) {
       m_exposureValues.at(i).resize(m_energies.size(), 0);
       std::pair<double, double> wholeInterval;
       wholeInterval.first = m_timeBoundaries[i];
