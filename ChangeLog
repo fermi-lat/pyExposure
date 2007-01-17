@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Wed Jan 17 14:14:32 PST 2007
+users/jchiang/pyExposure/python
+
+Modified Files:
+	flux_lc.py 
+Log Message:
+finish gtexposure application
+    *
+------------------------------------------------------------
+User: jchiang  Wed Jan 17 14:14:32 PST 2007
 users/jchiang/pyExposure/cmt
 
 Modified Files:
