@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1, operation: add
+Package: pyExposure
+User: jchiang  Wed Jan 17 14:42:42 2007
+Files:
+  pyExposure/.cvsignore  1.1.1.1
+  pyExposure/ChangeLog  1.11
+  pyExposure/cmt/requirements  1.4
+  pyExposure/doc/release.notes  1.1
+  pyExposure/pfiles/gtexposure.par  1.1
+  pyExposure/pyExposure/Exposure.h  1.2
+  pyExposure/python/flux_lc.py  1.2
+  pyExposure/src/Exposure.cxx  1.3
+  pyExposure/src/pyExposure.in  1.3
+  pyExposure/src/gtexposure/gtexposure.cxx  1.2
+
+    *
+------------------------------------------------------------
 User: jchiang  Wed Jan 17 14:42:19 PST 2007
 users/jchiang/pyExposure/pfiles
 
