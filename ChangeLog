@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Wed Jan 17 14:14:33 PST 2007
+users/jchiang/pyExposure/src/gtexposure
+
+Modified Files:
+	gtexposure.cxx 
+Log Message:
+finish gtexposure application
+    *
+------------------------------------------------------------
+User: jchiang  Wed Jan 17 14:14:33 PST 2007
 users/jchiang/pyExposure/src
 
 Modified Files:
