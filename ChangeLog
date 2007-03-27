@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Tue Mar 27 14:09:02 PDT 2007
+pyExposure/src
+
+Modified Files:
+	pyExposure.in 
+Log Message:
+add Linux-only switch for FPE handling
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p1, operation: add
 Package: pyExposure
