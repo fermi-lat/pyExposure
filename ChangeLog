@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Dec 10 13:35:41 PST 2007
+pyExposure
+
+Added Files:
+	SConscript pyExposureLib.py 
+Log Message:
+Initial import of SCons files
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p2, operation: add
 Package: pyExposure
