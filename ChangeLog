@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Jan 31 09:19:37 PST 2008
+pyExposure/src
+
+Added Files:
+	pyExposure.i 
+Log Message:
+added swig file used for SCons
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-01-00-03, operation: add
 Package: pyExposure
