@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: v1r0p3, operation: add
+Package: pyExposure
+User: golpa  Mon Feb  4 09:00:34 2008
+Files:
+  pyExposure/src/pyExposure.i  1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: pyExposure-01-00-03, operation: add
 Package: pyExposure
 User: golpa  Thu Jan 31 09:20:29 2008
