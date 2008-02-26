@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Feb 25 21:31:51 PST 2008
+ScienceTools-scons/pyExposure
+
+Modified Files:
+	pyExposureLib.py SConscript 
+Log Message:
+Set lib dependencies up for when building libraries
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p3, operation: add
 Package: pyExposure
