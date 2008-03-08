@@ -1,20 +1,23 @@
 # -*- python -*-
 #
-# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.2 2007/12/11 19:41:39 jchiang Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.3 2008/02/26 05:31:51 glastrm Exp $
 Import('baseEnv')
 Import('listFiles')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
+swigEnv = baseEnv.Clone()
 
 libEnv.Tool('pyExposureLib', depsOnly = 1)
-lib_pyExposureStaticLib = libEnv.StaticLibrary('lib_pyExposure', 
-                                               'src/pyExposure.i')
-lib_pyExposureSharedLib = libEnv.SharedLibrary('lib_pyExposure', 
-                                               'src/pyExposure.i')
 pyExposureLib = libEnv.StaticLibrary('pyExposure', listFiles(['src/*.cxx']))
 
 pyExposureSharedLib = libEnv.SharedLibrary('pyExposure', 
                                            listFiles(['src/*.cxx']))
+
+swigEnv.Tool('pyExposureLib')
+lib_pyExposureStaticLib = swigEnv.StaticLibrary('lib_pyExposure', 
+                                               'src/pyExposure.i')
+lib_pyExposureSharedLib = swigEnv.SharedLibrary('lib_pyExposure', 
+                                               'src/pyExposure.i')
 
 progEnv.Tool('pyExposureLib')
 
