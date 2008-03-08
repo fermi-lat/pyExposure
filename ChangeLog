@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glast  Fri Mar  7 16:41:13 PST 2008
+ScienceTools-scons/pyExposure
+
+Modified Files:
+	SConscript 
+Log Message:
+Separate out environment for swig library and c++ library
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-01-00-03, operation: mov
 Package: pyExposure
