@@ -1,7 +1,7 @@
-#$Id$
+#$Id: pyExposureLib.py,v 1.2 2008/02/26 05:31:51 glastrm Exp $
 def generate(env, **kw):
     if not kw.get('depsOnly',0):
-        env.Tool('addLibrary', library='pyExposure')
+        env.Tool('addLibrary', library=['pyExposure'])
     env.Tool('astroLib')
     env.Tool('irfLoaderLib')
     env.Tool('LikelihoodLib')
