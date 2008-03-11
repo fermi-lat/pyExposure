@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1r0p3, operation: mov
+Package: pyExposure
+User: glast  Mon Mar 10 22:17:02 2008
+Files:
+  pyExposure/pyExposureLib.py  1.3
+
+    *
+------------------------------------------------------------
 User: glastrm  Mon Mar 10 22:12:14 PDT 2008
 ScienceTools-scons/pyExposure
 
