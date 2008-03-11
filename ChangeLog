@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Mar 10 22:12:14 PDT 2008
+ScienceTools-scons/pyExposure
+
+Modified Files:
+	pyExposureLib.py 
+Log Message:
+pyExposure library needs to be added as a list
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-01-00-03, operation: mov
 Package: pyExposure
