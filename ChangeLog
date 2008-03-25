@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Tue Mar 25 16:58:40 PDT 2008
+pyExposure/pfiles
+
+Modified Files:
+	gtexposure.par 
+Log Message:
+use standard parameter names
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-01-00-03, operation: mov
 Package: pyExposure
