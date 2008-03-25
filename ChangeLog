@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Tue Mar 25 16:58:40 PDT 2008
+pyExposure/src/gtexposure
+
+Modified Files:
+	gtexposure.cxx 
+Log Message:
+use standard parameter names
+    *
+------------------------------------------------------------
+User: jchiang  Tue Mar 25 16:58:40 PDT 2008
 pyExposure/pfiles
 
 Modified Files:
