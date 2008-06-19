@@ -1,6 +1,9 @@
 # -*- python -*-
 #
-# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.3 2008/02/26 05:31:51 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.4 2008/03/08 00:41:13 glast Exp $
+# Authors: James Chiang <jchiang@slac.stanford.edu>
+# Version: pyExposure-01-00-03
+
 Import('baseEnv')
 Import('listFiles')
 progEnv = baseEnv.Clone()
