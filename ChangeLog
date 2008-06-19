@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Thu Jun 19 16:43:41 PDT 2008
+ScienceTools-scons/pyExposure
+
+Modified Files:
+	SConscript 
+Log Message:
+Added Author and Version fields
+    *
+------------------------------------------------------------
 User: jchiang  Tue Mar 25 16:58:40 PDT 2008
 pyExposure/src/gtexposure
 
