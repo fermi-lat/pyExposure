@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: pyExposure-01-00-03, operation: mov
+Package: pyExposure
+User: glastrm  Thu Jun 19 16:43:51 2008
+Files:
+  pyExposure/SConscript  1.5
+
+    *
+------------------------------------------------------------
 User: glastrm  Thu Jun 19 16:43:41 PDT 2008
 ScienceTools-scons/pyExposure
 
