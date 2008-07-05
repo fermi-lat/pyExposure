@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Fri Jul  4 23:37:35 PDT 2008
+pyExposure/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging v2
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r0p3, operation: mov
 Package: pyExposure
