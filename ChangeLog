@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Thu Jul 24 22:27:34 PDT 2008
+pyExposure/src/gtexposure
+
+Modified Files:
+	gtexposure.cxx 
+Log Message:
+include aperture correction
+    *
+------------------------------------------------------------
+User: jchiang  Thu Jul 24 22:27:34 PDT 2008
 pyExposure/src
 
 Modified Files:
