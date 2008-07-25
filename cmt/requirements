@@ -3,7 +3,7 @@ version v2
 
 author James Chiang <jchiang@slac.stanford.edu>
 
-# $Id: requirements,v 1.7 2007/03/27 21:28:40 jchiang Exp $
+# $Id: requirements,v 1.8 2008/07/05 06:37:35 jchiang Exp $
 
 use STpolicy v*
 use astro v*
@@ -17,8 +17,6 @@ use st_app v*
 use tip v*
 use optimizers v*
 use SwigPolicy v*
-#use pyLikelihood v* -no_auto_imports
-#use sane v* -no_auto_imports
 
 apply_pattern package_include
 apply_pattern package_linkopts
