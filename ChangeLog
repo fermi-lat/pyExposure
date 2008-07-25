@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Thu Jul 24 22:27:33 PDT 2008
+pyExposure/pfiles
+
+Modified Files:
+	gtexposure.par 
+Log Message:
+include aperture correction
+    *
+------------------------------------------------------------
+User: jchiang  Thu Jul 24 22:27:33 PDT 2008
 pyExposure/cmt
 
 Modified Files:
