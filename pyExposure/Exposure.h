@@ -4,7 +4,7 @@
  * point on the sky.
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/users/jchiang/pyExposure/pyExposure/Exposure.h,v 1.1.1.1 2006/03/10 05:49:13 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.2 2006/05/28 14:40:26 jchiang Exp $
  */
 
 #ifndef pyExposure_Exposure_h
@@ -32,7 +32,7 @@ namespace pyExposure {
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/users/jchiang/pyExposure/pyExposure/Exposure.h,v 1.1.1.1 2006/03/10 05:49:13 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.2 2006/05/28 14:40:26 jchiang Exp $
  */
 
 class Exposure {
@@ -42,7 +42,8 @@ public:
    Exposure(const std::string & scDataFile, 
             const std::vector<double> & timeBoundaries,
             const std::vector<double> & energies, 
-            double ra, double dec, const std::string & irfs="DC2");
+            double ra, double dec, double radius, 
+            const std::string & irfs="DC2");
 
    ~Exposure() throw();
 
@@ -66,6 +67,7 @@ private:
    std::vector<irfInterface::Irfs *> m_irfs;
    std::vector<double> m_energies;
    astro::SkyDir m_srcDir;
+   double m_radius;
    std::vector< std::vector<double> > m_exposureValues;
 
    Likelihood::ScData * m_scData;
