@@ -3,8 +3,9 @@
   @brief package pyExposure
 
   @verbatim
-  $Id: release.notes,v 1.3 2007/03/27 21:28:40 jchiang Exp $
+  $Id: release.notes,v 1.4 2008/07/05 06:37:35 jchiang Exp $
 
+  25-Jul-08 v2r1    JC    include aperture correction
   04-Jul-08 v2      JC    use standard par file names
   27-Mar-07 v1r0p2  JC    ifdef switch for TRAP_FPE only on Linux
   27-Mar-07 v1r0p1  JC    read in FT2 data for time interval of interest only
