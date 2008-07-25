@@ -1,5 +1,26 @@
 ------------------------------------------------------------
 TAG
+Tag name: pyExposure-02-01-00, operation: add
+Package: pyExposure
+User: glastrm  Fri Jul 25 14:30:46 2008
+Files:
+  pyExposure/.cvsignore  1.1.1.1
+  pyExposure/ChangeLog  1.61
+  pyExposure/SConscript  1.7
+  pyExposure/pyExposureLib.py  1.3
+  pyExposure/cmt/requirements  1.10
+  pyExposure/doc/release.notes  1.5
+  pyExposure/pfiles/gtexposure.par  1.3
+  pyExposure/pyExposure/Exposure.h  1.3
+  pyExposure/python/flux_lc.py  1.2
+  pyExposure/src/Exposure.cxx  1.5
+  pyExposure/src/pyExposure.i  1.1
+  pyExposure/src/pyExposure.in  1.4
+  pyExposure/src/gtexposure/gtexposure.cxx  1.4
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v2r1, operation: mov
 Package: pyExposure
 User: glastrm  Fri Jul 25 14:30:41 2008
