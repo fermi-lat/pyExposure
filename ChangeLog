@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Sat Jul 26 20:35:12 PDT 2008
+pyExposure/python
+
+Added Files:
+	light_curves.py 
+Log Message:
+add light_curves.py script
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-02-01-00, operation: add
 Package: pyExposure
