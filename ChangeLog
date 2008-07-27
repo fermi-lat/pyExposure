@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-07-00, operation: add
+Package: pyExposure
+User: glastrm  Sat Jul 26 21:00:10 2008
+Files:
+  pyExposure/cmt/requirements  1.10
+  pyExposure/doc/release.notes  1.5
+  pyExposure/pfiles/gtexposure.par  1.3
+  pyExposure/pyExposure/Exposure.h  1.3
+  pyExposure/python/flux_lc.py  1.2
+  pyExposure/src/Exposure.cxx  1.5
+  pyExposure/src/pyExposure.i  1.1
+  pyExposure/src/pyExposure.in  1.4
+  pyExposure/src/gtexposure/gtexposure.cxx  1.4
+
+    *
+------------------------------------------------------------
 User: jchiang  Sat Jul 26 20:35:12 PDT 2008
 pyExposure/python
 
