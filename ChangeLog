@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: glastrm  Tue Aug  5 23:30:54 PDT 2008
+pyExposure
+
+Modified Files:
+	SConscript 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p1, operation: add
 Package: pyExposure
