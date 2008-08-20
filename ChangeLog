@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Tue Aug 19 17:36:04 PDT 2008
+pyExposure/pyExposure
+
+Modified Files:
+	Exposure.h 
+Log Message:
+account for GTIs
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-02-01-01, operation: add
 Package: pyExposure
