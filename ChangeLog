@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Tue Aug 19 17:36:04 PDT 2008
+pyExposure/src
+
+Modified Files:
+	Exposure.cxx 
+Log Message:
+account for GTIs
+    *
+------------------------------------------------------------
+User: jchiang  Tue Aug 19 17:36:04 PDT 2008
 pyExposure/pyExposure
 
 Modified Files:
