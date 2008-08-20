@@ -4,7 +4,7 @@
  * point on the sky.
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.2 2006/05/28 14:40:26 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.3 2008/07/25 05:27:33 jchiang Exp $
  */
 
 #ifndef pyExposure_Exposure_h
@@ -32,7 +32,7 @@ namespace pyExposure {
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.2 2006/05/28 14:40:26 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.3 2008/07/25 05:27:33 jchiang Exp $
  */
 
 class Exposure {
@@ -41,6 +41,7 @@ public:
 
    Exposure(const std::string & scDataFile, 
             const std::vector<double> & timeBoundaries,
+            const std::vector< std::pair<double, double> > & gtis,
             const std::vector<double> & energies, 
             double ra, double dec, double radius, 
             const std::string & irfs="DC2");
@@ -64,6 +65,7 @@ public:
 private:
 
    std::vector<double> m_timeBoundaries;
+   std::vector< std::pair<double, double> > m_gtis;
    std::vector<irfInterface::Irfs *> m_irfs;
    std::vector<double> m_energies;
    astro::SkyDir m_srcDir;
