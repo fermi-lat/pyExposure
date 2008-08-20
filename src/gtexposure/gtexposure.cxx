@@ -6,12 +6,13 @@
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/src/gtexposure/gtexposure.cxx,v 1.4 2008/07/25 05:27:34 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/src/gtexposure/gtexposure.cxx,v 1.5 2008/08/04 20:06:33 jchiang Exp $
  */
 
 #include <sstream>
 #include <stdexcept>
 #include <string>
+#include <utility>
 #include <vector>
 
 #include <xercesc/util/XercesDefs.hpp>
@@ -36,6 +37,8 @@
 #include "optimizers/FunctionFactory.h"
 
 #include "dataSubselector/Cuts.h"
+#include "dataSubselector/Gti.h"
+#include "dataSubselector/GtiCut.h"
 #include "dataSubselector/RangeCut.h"
 #include "dataSubselector/SkyConeCut.h"
 
@@ -192,7 +195,14 @@ void GtExposure::setExposure() {
    if (irfs == "DSS") {
       irfs = "DC2";
    }
-   m_exposure = new pyExposure::Exposure(ft2file, tlims, energies, 
+   std::string lc_file = m_pars["infile"];
+   dataSubselector::GtiCut gtiCut(lc_file);
+   std::vector< std::pair<double, double> > gtis;
+   evtbin::Gti::ConstIterator it(gtiCut.gti().begin());
+   for ( ; it != gtiCut.gti().end(); ++it) {
+      gtis.push_back(std::make_pair(it->first, it->second));
+   }
+   m_exposure = new pyExposure::Exposure(ft2file, tlims, gtis, energies, 
                                          m_ra, m_dec, m_radius, irfs);
 }
 
