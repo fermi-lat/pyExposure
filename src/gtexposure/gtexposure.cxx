@@ -6,7 +6,7 @@
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/src/gtexposure/gtexposure.cxx,v 1.5 2008/08/04 20:06:33 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/src/gtexposure/gtexposure.cxx,v 1.6 2008/08/20 00:36:04 jchiang Exp $
  */
 
 #include <sstream>
@@ -49,6 +49,7 @@
 #include "Likelihood/LogParabola.h"
 #include "Likelihood/MapCubeFunction.h"
 #include "Likelihood/PowerLaw2.h"
+#include "Likelihood/PowerLawSuperExpCutoff.h"
 
 #include "pyExposure/Exposure.h"
 
@@ -335,4 +336,5 @@ void GtExposure::prepareFunctionFactory() {
    m_funcFactory->addFunc("MapCubeFunction", new Likelihood::MapCubeFunction(),
                           false);
    m_funcFactory->addFunc("PowerLaw2", new Likelihood::PowerLaw2(), false);
+   m_funcFactory->addFunc("PLSuperExpCutoff", new Likelihood::PowerLawSuperExpCutoff(), false);
 }
