@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Thu Jun  4 10:46:16 PDT 2009
+pyExposure/src
+
+Modified Files:
+	Exposure.cxx 
+Log Message:
+set size of rows in m_exposureValues
+    *
+------------------------------------------------------------
 User: jchiang  Wed Jun  3 22:52:20 PDT 2009
 pyExposure/src
 
