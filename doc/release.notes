@@ -3,8 +3,9 @@
   @brief package pyExposure
 
   @verbatim
-  $Id: release.notes,v 1.7 2008/08/21 07:17:44 jchiang Exp $
+  $Id: release.notes,v 1.8 2008/12/12 00:38:39 jchiang Exp $
 
+  04-Jun-09 v2r4    JC    use new ScData interface; add efficiency corrections
   11-Dec-08 v2r3    JC    fix fencepost error in Exposure::integrateExposure();
                           add PLSuperExpCutoff
   21-Aug-08 v2r2    JC    include GTIs in exposure calculation
