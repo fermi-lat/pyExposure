@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Thu Jun  4 15:26:38 PDT 2009
+pyExposure/src
+
+Modified Files:
+	Exposure.cxx 
+Log Message:
+include efficiency correction
+    *
+------------------------------------------------------------
+User: jchiang  Thu Jun  4 15:26:38 PDT 2009
 pyExposure/pyExposure
 
 Modified Files:
