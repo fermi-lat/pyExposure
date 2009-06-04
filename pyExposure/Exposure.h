@@ -4,7 +4,7 @@
  * point on the sky.
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.3 2008/07/25 05:27:33 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.4 2008/08/20 00:36:04 jchiang Exp $
  */
 
 #ifndef pyExposure_Exposure_h
@@ -14,6 +14,7 @@
 #include <vector>
 
 #include "astro/SkyDir.h"
+#include "irfInterface/EfficiencyFactor.h"
 
 namespace irfInterface {
    class Irfs;
@@ -32,7 +33,7 @@ namespace pyExposure {
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.3 2008/07/25 05:27:33 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/pyExposure/Exposure.h,v 1.4 2008/08/20 00:36:04 jchiang Exp $
  */
 
 class Exposure {
@@ -74,9 +75,12 @@ private:
 
    Likelihood::ScData * m_scData;
 
+   irfInterface::EfficiencyFactor m_efficiencyFactor;
+
    void readScData(const std::string & filename);
    void integrateExposure();
    double effArea(double time, double energy) const;
+
 };
 
 }
