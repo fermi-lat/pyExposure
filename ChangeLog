@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Wed Jun  3 22:52:20 PDT 2009
+pyExposure/src
+
+Modified Files:
+	Exposure.cxx 
+Log Message:
+use new ScData interface; still need to test
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-14-00, operation: add
 Package: pyExposure
