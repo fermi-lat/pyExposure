@@ -3,9 +3,10 @@
   @brief package pyExposure
 
   @verbatim
-  $Id: release.notes,v 1.9 2009/06/04 22:29:53 jchiang Exp $
+  $Id: release.notes,v 1.10 2009/07/01 17:06:23 heather Exp $
   * EOH *
 
+  16-Jul-09 v2r4p1  jrb   update SConscript
   04-Jun-09 v2r4    JC    use new ScData interface; add efficiency corrections
   11-Dec-08 v2r3    JC    fix fencepost error in Exposure::integrateExposure();
                           add PLSuperExpCutoff
