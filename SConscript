@@ -1,6 +1,6 @@
 # -*- python -*-
 #
-# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.13 2009/06/04 22:31:17 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.14 2009/07/06 17:46:04 glastrm Exp $
 # Authors: James Chiang <jchiang@slac.stanford.edu>
 # Version: pyExposure-02-04-00
 
@@ -25,10 +25,11 @@ progEnv.Tool('pyExposureLib')
 gtexposureBin = progEnv.Program('gtexposure', 
                                 listFiles(['src/gtexposure/*.cxx']))
 
-progEnv.Tool('registerObjects', package = 'pyExposure',
-             libraries = [pyExposureLib, pyExposureSharedLib,
-                          lib_pyExposureSharedLib],
-             binaries = [gtexposureBin],
+progEnv.Tool('registerTargets', package = 'pyExposure',
+             staticLibraryCxts=[[pyExposureLib, libEnv]],
+             libraryCxts=[[pyExposureSharedLib, libEnv]],
+             swigLibraryCxts=[[lib_pyExposureSharedLib, swigEnv]],
+             binaryCxts = [[gtexposureBin, progEnv]],
              includes = listFiles(['pyExposure/*.h']), 
              pfiles = listFiles(['pfiles/*.par']),
              python = ['src/pyExposure.py'])
