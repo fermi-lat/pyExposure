@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Wed Jul 29 08:04:01 PDT 2009
+pyExposure/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+disable python module build
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-02-04-01, operation: add
 Package: pyExposure
