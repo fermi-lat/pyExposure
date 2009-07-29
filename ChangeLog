@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 29 12:22:32 PDT 2009
+ScienceTools-scons/pyExposure
+
+Modified Files:
+	SConscript 
+Log Message:
+Eliminate swig library, static library.  Just build shared lib. and app.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-02-05-00, operation: add
 Package: pyExposure
