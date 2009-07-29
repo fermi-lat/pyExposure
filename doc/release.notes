@@ -3,9 +3,10 @@
   @brief package pyExposure
 
   @verbatim
-  $Id: release.notes,v 1.11 2009/07/16 21:15:34 jrb Exp $
+  $Id: release.notes,v 1.12 2009/07/29 15:13:53 jchiang Exp $
   * EOH *
 
+ pyExposure-02-05-00 29-Jul-2009  golpa disable swig build
  pyExposure-02-05-00 29-Jul-2009 jchiang disable swig build
   16-Jul-09 v2r4p1  jrb   update SConscript
   04-Jun-09 v2r4    JC    use new ScData interface; add efficiency corrections
