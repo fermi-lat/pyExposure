@@ -1,6 +1,6 @@
 # -*- python -*-
 #
-# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.17 2009/07/29 15:13:53 jchiang Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.18 2009/07/29 19:22:32 jrb Exp $
 # Authors: James Chiang <jchiang@slac.stanford.edu>
 # Version: pyExposure-02-05-00
 
@@ -32,5 +32,5 @@ progEnv.Tool('registerTargets', package = 'pyExposure',
              #swigLibraryCxts=[[lib_pyExposureSharedLib, swigEnv]],
              binaryCxts = [[gtexposureBin, progEnv]],
              includes = listFiles(['pyExposure/*.h']), 
-             pfiles = listFiles(['pfiles/*.par']),
-             python = ['src/pyExposure.py'])
+             pfiles = listFiles(['pfiles/*.par']))
+             #python = ['src/pyExposure.py'])
