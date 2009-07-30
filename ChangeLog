@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: elwinter  Thu Jul 30 10:06:35 PDT 2009
+pyExposure/pfiles
+
+Modified Files:
+      Tag: ScienceToolsv9r15p2
+	gtexposure.par 
+Log Message:
+Imported changes from FSSC.
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-02-05-01, operation: add
 Package: pyExposure
