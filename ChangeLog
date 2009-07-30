@@ -2,6 +2,16 @@
 TAG
 Tag name: pyExposure-02-05-01, operation: add
 Package: pyExposure
+User: jrb  Thu Jul 30 09:59:34 2009
+Files:
+  pyExposure/python/flux_lc.py  1.2
+  pyExposure/python/light_curves.py  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: pyExposure-02-05-01, operation: add
+Package: pyExposure
 User: jrb  Thu Jul 30 09:59:27 2009
 Files:
   pyExposure/pyExposure/Exposure.h  1.5
