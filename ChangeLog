@@ -2,6 +2,15 @@
 TAG
 Tag name: pyExposure-02-05-01, operation: add
 Package: pyExposure
+User: jrb  Thu Jul 30 09:59:27 2009
+Files:
+  pyExposure/pyExposure/Exposure.h  1.5
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: pyExposure-02-05-01, operation: add
+Package: pyExposure
 User: jrb  Thu Jul 30 09:59:21 2009
 Files:
   pyExposure/pfiles/gtexposure.par  1.3
