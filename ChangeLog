@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Thu Nov 19 20:19:55 PST 2009
+pyExposure/src
+
+Modified Files:
+	Exposure.cxx 
+Log Message:
+use irfInterface::IEfficiencyFactor
+    *
+------------------------------------------------------------
+User: jchiang  Thu Nov 19 20:19:55 PST 2009
 pyExposure/pyExposure
 
 Modified Files:
