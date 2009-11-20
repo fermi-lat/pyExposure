@@ -3,9 +3,10 @@
   @brief package pyExposure
 
   @verbatim
-  $Id: release.notes,v 1.13 2009/07/29 17:38:38 golpa Exp $
+  $Id: release.notes,v 1.14 2009/07/30 16:58:53 jrb Exp $
   * EOH *
 
+ pyExposure-02-05-02 19-Nov-2009 jchiang use irfInterface::IEfficiencyFactor
  pyExposure-02-05-01 30-Jul-2009    jrb Fix bug in SConscript, attempting to register 
     non-existent file
  pyExposure-02-05-00 29-Jul-2009  golpa disable swig build
