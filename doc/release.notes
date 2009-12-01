@@ -3,9 +3,10 @@
   @brief package pyExposure
 
   @verbatim
-  $Id: release.notes,v 1.14 2009/07/30 16:58:53 jrb Exp $
+  $Id: release.notes,v 1.15 2009/11/20 04:21:40 jchiang Exp $
   * EOH *
 
+ pyExposure-02-05-03 01-Dec-2009 jchiang add const to declaration in Exposure::effArea for windows build
  pyExposure-02-05-02 19-Nov-2009 jchiang use irfInterface::IEfficiencyFactor
  pyExposure-02-05-01 30-Jul-2009    jrb Fix bug in SConscript, attempting to register 
     non-existent file
