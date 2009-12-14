@@ -3,7 +3,7 @@
  * @brief LAT effective area, integrated over time bins.
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/src/Exposure.cxx,v 1.11 2009/11/20 04:19:55 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/Exposure.cxx,v 1.12 2009/12/01 20:42:28 jchiang Exp $
  */
 
 #include <algorithm>
@@ -147,7 +147,10 @@ double Exposure::effArea(double time, double energy) const {
          irfInterface::IPsf * psf = m_irfs.at(i)->psf();
          aperture = psf->angularIntegral(energy, theta, phi, m_radius);
       }
-      double efficiency(eff->value(energy, livetimefrac));
+      double efficiency(1);
+      if (eff) {
+         efficiency = eff->value(energy, livetimefrac);
+      }
       my_effArea += aeff->value(energy, m_srcDir, zAxis, xAxis)*aperture
          *efficiency;
    }
