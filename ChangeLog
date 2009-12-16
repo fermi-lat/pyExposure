@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: elwinter  Wed Dec 16 15:27:06 PST 2009
+pyExposure/pfiles
+
+Modified Files:
+	gtexposure.par 
+Log Message:
+Changed default value of irfs parameter to P6_V3_DIFFUSE.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: pyExposure-02-05-04, operation: add
 Package: pyExposure
