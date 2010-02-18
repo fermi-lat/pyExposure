@@ -1,6 +1,6 @@
 # -*- python -*-
 #
-# $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/SConscript,v 1.22 2009/12/01 20:51:25 jchiang Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.23 2009/12/14 22:44:31 jchiang Exp $
 # Authors: James Chiang <jchiang@slac.stanford.edu>
 # Version: pyExposure-02-05-04
 
@@ -10,18 +10,17 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 #swigEnv = baseEnv.Clone()
 
-libEnv.Tool('pyExposureLib', depsOnly = 1)
-#pyExposureLib = libEnv.StaticLibrary('pyExposure', listFiles(['src/*.cxx']))
+libEnv.Append(CPPDEFINES = 'TRAP_FPE')
 pyExposureLib = libEnv.SharedLibrary('pyExposure', listFiles(['src/*.cxx']))
 
-#pyExposureSharedLib = libEnv.SharedLibrary('pyExposure', 
-#                                           listFiles(['src/*.cxx']))
 
 #swigEnv.Tool('pyExposureLib')
 #lib_pyExposureSharedLib = swigEnv.LoadableModule('_pyExposure', 
 #                                                 'src/pyExposure.i')
 
+
 progEnv.Tool('pyExposureLib')
+progEnv.Append(CPPDEFINES = 'TRAP_FPE')
 
 gtexposureBin = progEnv.Program('gtexposure', 
                                 listFiles(['src/gtexposure/*.cxx']))
