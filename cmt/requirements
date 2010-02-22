@@ -1,9 +1,9 @@
 package pyExposure
-version v2r5p4
+version v2r5p5
 
 author James Chiang <jchiang@slac.stanford.edu>
 
-# $Id: requirements,v 1.18 2009/12/01 20:50:23 jchiang Exp $
+# $Id: requirements,v 1.19 2009/12/14 22:43:55 jchiang Exp $
 
 use STpolicy v*
 use astro v*
