@@ -1,6 +1,6 @@
 # -*- python -*-
 #
-# $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/SConscript,v 1.26 2010/02/22 23:12:49 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/SConscript,v 1.27 2010/02/24 20:06:28 jrb Exp $
 # Authors: James Chiang <jchiang@slac.stanford.edu>
 # Version: pyExposure-02-05-06
 
@@ -12,8 +12,7 @@ libEnv = baseEnv.Clone()
 
 libEnv.Append(CPPDEFINES = 'TRAP_FPE')
 
-if baseEnv['PLATFORM'] == "win32":
-    libEnv.Tool('pyExposureLib', depsOnly = 1)
+libEnv.Tool('addLinkDeps', package='pyExposure', toBuild='shared')
 
 pyExposureLib = libEnv.SharedLibrary('pyExposure', listFiles(['src/*.cxx']))
 
