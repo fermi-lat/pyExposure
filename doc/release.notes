@@ -3,9 +3,10 @@
   @brief package pyExposure
 
   @verbatim
-  $Id: release.notes,v 1.19 2010/02/24 20:06:28 jrb Exp $
+  $Id: release.notes,v 1.20 2010/02/24 20:14:47 jrb Exp $
   * EOH *
 
+ pyExposure-02-05-08 24-Feb-2010    jrb TRAP_FPE is for Linux only
  pyExposure-02-05-07 24-Feb-2010    jrb fix linking for mac
  pyExposure-02-05-06 24-Feb-2010    jrb fix linking for mac
  pyExposure-02-05-05 22-Feb-2010    jrb correct use of xxLib for libEnv
