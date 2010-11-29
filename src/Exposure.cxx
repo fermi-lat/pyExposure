@@ -3,7 +3,7 @@
  * @brief LAT effective area, integrated over time bins.
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/Exposure.cxx,v 1.12 2009/12/01 20:42:28 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/Exposure.cxx,v 1.13 2009/12/14 21:45:53 jchiang Exp $
  */
 
 #include <algorithm>
@@ -135,7 +135,10 @@ double Exposure::effArea(double time, double energy) const {
    double livetimefrac = (m_scData->livetime(indx)
                           /(m_scData->stop(indx) - m_scData->start(indx)));
    double theta(m_srcDir.difference(zAxis)*180./M_PI);
-   double phi(0);
+
+   CLHEP::Hep3Vector yhat(zAxis.dir().cross(xAxis.dir()));
+   double phi = std::atan2(yhat.dot(m_srcDir.dir()), 
+                           xAxis.dir().dot(m_srcDir.dir()))*180./M_PI;
    
    double my_effArea(0);
    for (size_t i = 0; i < m_irfs.size(); i++) {
