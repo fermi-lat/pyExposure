@@ -6,7 +6,7 @@
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/src/gtexposure/gtexposure.cxx,v 1.6 2008/08/20 00:36:04 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/gtexposure/gtexposure.cxx,v 1.7 2008/12/12 00:37:24 jchiang Exp $
  */
 
 #include <sstream>
@@ -53,7 +53,9 @@
 
 #include "pyExposure/Exposure.h"
 
-XERCES_CPP_NAMESPACE_USE
+// XERCES_CPP_NAMESPACE_USE
+using XERCES_CPP_NAMESPACE_QUALIFIER DOMElement;
+using XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument;
 
 class GtExposure : public st_app::StApp {
 
@@ -104,7 +106,7 @@ private:
 
 st_app::StAppFactory<GtExposure> myAppFactory("gtexposure");
 
-std::string GtExposure::s_cvs_id("$Name:  $");
+std::string GtExposure::s_cvs_id("$Name: ScienceTools-LATEST-1-3163 $");
 
 GtExposure::GtExposure() 
    : st_app::StApp(), 
