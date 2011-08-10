@@ -6,7 +6,7 @@
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/gtexposure/gtexposure.cxx,v 1.7 2008/12/12 00:37:24 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/gtexposure/gtexposure.cxx,v 1.8 2011/02/02 01:21:38 jchiang Exp $
  */
 
 #include <sstream>
@@ -47,7 +47,7 @@
 #include "Likelihood/ExpCutoff.h"
 #include "Likelihood/FileFunction.h"
 #include "Likelihood/LogParabola.h"
-#include "Likelihood/MapCubeFunction.h"
+#include "Likelihood/MapCubeFunction2.h"
 #include "Likelihood/PowerLaw2.h"
 #include "Likelihood/PowerLawSuperExpCutoff.h"
 
@@ -106,7 +106,7 @@ private:
 
 st_app::StAppFactory<GtExposure> myAppFactory("gtexposure");
 
-std::string GtExposure::s_cvs_id("$Name: ScienceTools-LATEST-1-3163 $");
+std::string GtExposure::s_cvs_id("$Name:  $");
 
 GtExposure::GtExposure() 
    : st_app::StApp(), 
@@ -335,7 +335,7 @@ void GtExposure::prepareFunctionFactory() {
    m_funcFactory->addFunc("LogParabola", new Likelihood::LogParabola(), false);
    m_funcFactory->addFunc("FileFunction", new Likelihood::FileFunction(), 
                           false);
-   m_funcFactory->addFunc("MapCubeFunction", new Likelihood::MapCubeFunction(),
+   m_funcFactory->addFunc("MapCubeFunction", new Likelihood::MapCubeFunction2(),
                           false);
    m_funcFactory->addFunc("PowerLaw2", new Likelihood::PowerLaw2(), false);
    m_funcFactory->addFunc("PLSuperExpCutoff", new Likelihood::PowerLawSuperExpCutoff(), false);
