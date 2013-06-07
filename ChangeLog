@@ -1,5 +1,27 @@
 ------------------------------------------------------------
 TAG
+Tag name: ScienceTools-09-32-03, operation: add
+Package: pyExposure
+User: heather  Fri Jun  7 08:48:55 2013
+Files:
+  pyExposure/.cvsignore  1.2
+  pyExposure/ChangeLog  1.225
+  pyExposure/SConscript  1.33
+  pyExposure/pyExposureLib.py  1.3
+  pyExposure/cmt/requirements  1.25
+  pyExposure/doc/release.notes  1.23
+  pyExposure/pfiles/gtexposure.par  1.5
+  pyExposure/pyExposure/Exposure.h  1.6
+  pyExposure/python/flux_lc.py  1.2
+  pyExposure/python/light_curves.py  1.1
+  pyExposure/src/Exposure.cxx  1.14
+  pyExposure/src/pyExposure.i  1.1
+  pyExposure/src/pyExposure.in  1.4
+  pyExposure/src/gtexposure/gtexposure.cxx  1.9
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: ScienceTools-09-32-02, operation: add
 Package: pyExposure
 User: jchiang  Thu Jun  6 10:06:56 2013
