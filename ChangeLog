@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jchiang  Thu Oct 10 11:59:11 PDT 2013
+ScienceTools-scons/pyExposure/src/gtexposure
+
+Modified Files:
+	gtexposure.cxx 
+Log Message:
+use automatic irf discovery mechanism
+    *
+------------------------------------------------------------
+User: jchiang  Thu Oct 10 11:59:11 PDT 2013
 ScienceTools-scons/pyExposure/pfiles
 
 Modified Files:
