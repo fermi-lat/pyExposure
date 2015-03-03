@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Tue Mar  3 11:59:02 PST 2015
+ScienceTools-scons/pyExposure/src/gtexposure
+
+Modified Files:
+	gtexposure.cxx 
+Log Message:
+account for interface changes in optimizers::Function
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-10-00-02, operation: add
 Package: pyExposure
