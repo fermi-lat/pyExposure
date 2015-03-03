@@ -1,8 +1,8 @@
 # -*- python -*-
 #
-# $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/SConscript,v 1.33 2011/08/10 16:08:46 jchiang Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/pyExposure/SConscript,v 1.34 2013/10/10 18:59:50 jchiang Exp $
 # Authors: James Chiang <jchiang@slac.stanford.edu>
-# Version: pyExposure-02-06-00
+# Version: pyExposure-02-06-01
 
 Import('baseEnv')
 Import('listFiles')
