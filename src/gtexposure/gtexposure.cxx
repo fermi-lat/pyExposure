@@ -6,7 +6,7 @@
  *
  * @author J. Chiang
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/gtexposure/gtexposure.cxx,v 1.9 2011/08/10 16:08:26 jchiang Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/ScienceTools-scons/pyExposure/src/gtexposure/gtexposure.cxx,v 1.10 2013/10/10 18:59:11 jchiang Exp $
  */
 
 #include <sstream>
@@ -274,7 +274,7 @@ void GtExposure::performSpectralWeighting() {
    std::vector<double> dndes;
    for (size_t k(0); k < energies.size(); k++) {
       optimizers::dArg arg(energies.at(k));
-      dndes.push_back(m_function->value(arg));
+      dndes.push_back(m_function->operator()(arg));
    }
    double dnde_int(0);
    for (size_t k(0); k < energies.size()-1; k++) {
