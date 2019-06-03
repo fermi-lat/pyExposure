@@ -50,6 +50,7 @@
 #include "Likelihood/MapCubeFunction2.h"
 #include "Likelihood/PowerLaw2.h"
 #include "Likelihood/PowerLawSuperExpCutoff.h"
+#include "Likelihood/PowerLawSuperExpCutoff2.h"
 
 #include "pyExposure/Exposure.h"
 
