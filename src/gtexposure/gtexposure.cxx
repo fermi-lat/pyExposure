@@ -52,6 +52,7 @@
 #include "Likelihood/PowerLawSuperExpCutoff.h"
 #include "Likelihood/PowerLawSuperExpCutoff2.h"
 #include "Likelihood/PowerLawSuperExpCutoff3.h"
+#include "Likelihood/PowerLawSuperExpCutoff4.h"
 
 #include "pyExposure/Exposure.h"
 
@@ -344,4 +345,5 @@ void GtExposure::prepareFunctionFactory() {
    m_funcFactory->addFunc("PLSuperExpCutoff", new Likelihood::PowerLawSuperExpCutoff(), false);
    m_funcFactory->addFunc("PLSuperExpCutoff2", new Likelihood::PowerLawSuperExpCutoff2(), false);
    m_funcFactory->addFunc("PLSuperExpCutoff3", new Likelihood::PowerLawSuperExpCutoff3(), false);
+   m_funcFactory->addFunc("PLSuperExpCutoff4", new Likelihood::PowerLawSuperExpCutoff4(), false);
 }
