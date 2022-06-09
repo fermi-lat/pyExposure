@@ -1,4 +1,4 @@
-add_library(pyExposure SHARED src/Exposure.cxx)
+add_library(pyExposure src/Exposure.cxx)
 target_include_directories(
   pyExposure
   PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}> $<INSTALL_INTERFACE:>
