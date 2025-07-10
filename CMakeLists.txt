@@ -10,6 +10,8 @@ target_link_libraries(
   dataSubselector st_stream st_app tip optimizers
 )
 
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 add_executable(gtexposure src/gtexposure/gtexposure.cxx)
 target_link_libraries(gtexposure PRIVATE pyExposure)
 target_include_directories(
