@@ -17,7 +17,8 @@ emin,r,h,30,20,5e5,Mininum Energy (MeV)
 emax,r,h,2e5,20,5e5,Maximum Energy (MeV)
 enumbins,i,h,30,2,200,Number of energy bands
 
-chatter,        i, h, 2, , , "Output verbosity"
+# Increased chatter from 2 to 3 to output tool version string.
+chatter,        i, h, 3, , , "Output verbosity"
 clobber,        b, h, yes, , , "Overwrite existing output files"
 debug,          b, h, no, , , "Activate debugging mode"
 gui,            b, h, no, , , "GUI mode activated"
