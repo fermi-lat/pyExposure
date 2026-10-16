@@ -52,7 +52,7 @@ Exposure::~Exposure() throw() {
    }
 }
    
-double Exposure::value(double time, double energy) const {
+auto Exposure::value(double time, double energy) const -> double {
    int indx = std::upper_bound(m_timeBoundaries.begin(), 
                                m_timeBoundaries.end(), time) 
       - m_timeBoundaries.begin() - 1;
@@ -128,7 +128,7 @@ void Exposure::integrateExposure() {
    }
 }
 
-double Exposure::effArea(double time, double energy) const {
+auto Exposure::effArea(double time, double energy) const -> double {
    size_t indx = m_scData->time_index(time);
    astro::SkyDir zAxis = m_scData->zAxis(indx);
    astro::SkyDir xAxis = m_scData->xAxis(indx);

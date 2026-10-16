@@ -59,7 +59,7 @@
 
 namespace {
    // Helper function to get attribute value from a RapidXML node
-   std::string getAttribute(rapidxml::xml_node<>* node, const char* attrName) {
+   auto getAttribute(rapidxml::xml_node<>* node, const char* attrName) -> std::string {
       if (!node) {
          return "";
       }
@@ -71,7 +71,7 @@ namespace {
    }
 
    // Helper function to check tag name
-   bool checkTagName(rapidxml::xml_node<>* node, const char* tagName) {
+   auto checkTagName(rapidxml::xml_node<>* node, const char* tagName) -> bool {
       if (!node || !node->name()) {
          return false;
       }
@@ -94,7 +94,7 @@ namespace {
    }
 
    // Helper function to read file contents
-   std::string readFileContents(const std::string& filename) {
+   auto readFileContents(const std::string& filename) -> std::string {
       std::ifstream file(filename);
       if (!file) {
          throw std::runtime_error("Cannot open file: " + filename);
