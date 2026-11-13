@@ -32,7 +32,7 @@ Exposure::Exposure(const std::string & scDataFile,
                    double ra, double dec, double radius,
                    const std::string & irfs) 
    : m_timeBoundaries(timeBoundaries), m_gtis(gtis), m_energies(energies),
-     m_srcDir(astro::SkyDir(ra, dec)), m_radius(radius), m_scData(0) {
+     m_srcDir(astro::SkyDir(ra, dec)), m_radius(radius), m_scData(nullptr) {
    irfLoader::Loader::go();
    const std::vector<std::string> & 
       irfNames(irfLoader::Loader::respIds().find(irfs)->second);
@@ -86,7 +86,7 @@ void Exposure::readScData(const std::string & scDataFile) {
                     60.);
    std::vector<std::string> scFiles;
    st_facilities::Util::resolve_fits_files(scDataFile, scFiles);
-   std::vector<std::string>::const_iterator scIt = scFiles.begin();
+   auto scIt = scFiles.begin();
    bool clear(true);
    for ( ; scIt != scFiles.end(); scIt++) {
       st_facilities::Util::file_ok(*scIt);
